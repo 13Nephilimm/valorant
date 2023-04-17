@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+  overflow-x: hidden;
+}
+
+.section-cards {
+  padding: 48px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-box {
+  margin-top: 80px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  gap: 30px;
+  row-gap: 44px;
+}
+
+.card {
+  padding: 20px;
+  border: 4.4px #ffecee solid;
+  border-radius: 13px;
+  background-color: #4f6d68;
+  box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  box-shadow: 4px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.agent-name {
+  text-align: center;
+  font-size: 36px;
+  padding: 3px;
+}
+
+.list {
+  list-style: none;
+  padding: 4px;
+  font-size: 24px;
+}
+
+.list-item {
+  padding: 3px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.agent-image {
+  width: 100%;
+}
+
+.agents-heading {
+  font-size: 96px;
+  color: #ffecee;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.search {
+  margin-top: 80px;
+  padding: 16px 48px;
+  color: #000;
+  background-color: #ffecee;
+  border: none;
+  border-radius: 20px;
+}
+
+/*************************************
+QUERIES
+*************************************/
+@media (max-width: 1148px) {
+  .card-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .card-box {
+    grid-template-columns: 1fr;
+  }
+}
